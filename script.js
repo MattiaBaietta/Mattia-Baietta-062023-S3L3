@@ -12,15 +12,11 @@ function addtxt(){
     
     aggtxt.innerText=txt.value
     aggbtn.innerText="cancella"
-    aggbtn.id=i
-    aggtxt.id=i
     aggbtn.className="deleteButton"   
    
     checkpos.appendChild(aggtxt)
     aggtxt.appendChild(aggbtn)
    
-   
-    i++
     aggbtn.addEventListener("click",function(){
         aggtxt.parentNode.removeChild(aggtxt)
     })
