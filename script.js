@@ -1,7 +1,7 @@
 let txt=document.getElementById("inserisci")
 let checkpos=document.querySelector("ul")
 const posizionebutton=document.getElementById("bottone")
-let deleteButtons=document.querySelectorAll("input")
+
 //console.log(posizionebutton)
 let i=0
 
@@ -20,13 +20,20 @@ function addtxt(){
     aggbtn.addEventListener("click",function(){
         aggtxt.parentNode.removeChild(aggtxt)
     })
-
+    aggtxt.addEventListener("click",function(){
+        if(aggtxt.style.textDecoration== "line-through")
+        {
+            aggtxt.style.textDecoration="none"
+        }
+        else{
+        aggtxt.style.textDecoration= "line-through"
+    }
+    })
 
 }
 console.log(txt.value)
 
 posizionebutton.addEventListener("click",addtxt)
-
 
 
 

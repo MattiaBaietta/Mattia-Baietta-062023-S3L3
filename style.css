@@ -1,0 +1,25 @@
+form{
+    background-color: lightblue;
+    display: inline-block;
+    margin-top: 20em;
+
+    
+    
+}
+html{
+    align-items: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding-left: 10px;
+}
+li{
+    text-align: left;
+    
+   
+}
+button{
+    margin-left: 50px;
+    
+}
